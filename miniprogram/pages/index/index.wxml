@@ -1,28 +1,27 @@
-<!--index.wxml-->
-<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    <view class="userinfo">
-      <block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
-        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
-        </button>
-        <view class="nickname-wrapper">
-          <text class="nickname-label">昵称</text>
-          <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
-        </view>
-      </block>
-      <block wx:elif="{{!hasUserInfo}}">
-        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-        <view wx:else> 请使用2.10.4及以上版本基础库 </view>
-      </block>
-      <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      </block>
+<!-- index.wxml -->
+<navigation-bar title="weapp-tailwindcss" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view class="p-4">
+   <view class="space-y-1.5 [&>view]:text-center">
+    <view
+      class="aspect-[100/16.1] bg-[url(https://pic4.zhimg.com/80/v2-63755eaa318858e33445862d72581207.png)] bg-[length:100%_100%] bg-no-repeat"></view>
+
+    <view
+      class="flex items-center justify-center text-gray-600/75"
+      bindtap="copy('https://github.com/sonofmagic/weapp-tailwindcss')">
+      <view class="i-mdi-github-circle mx-2 text-[32px] text-black"></view>
+      <view class="text-[22px]">+</view>
+      <view class="i-mdi-star mx-2 text-[32px] text-yellow-400"></view>
     </view>
-    <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
+    <view
+      bindtap="copy('https://weapp-tw.icebreaker.top/')"
+      class="bg-gradient-to-r from-green-400 to-sky-400 bg-clip-text text-2xl font-extrabold text-transparent underline">
+      weapp-tw.icebreaker.top
     </view>
+    <view class="text-xs text-gray-600/75">
+      你可以在上方的官网上，找到大量的提效解决方案
+    </view>
+
+    <view
+      class="mb-2 text-center before:text-xs before:text-sky-400 before:content-['现在，让我们开始神奇的_tailwindcss_开发之旅吧！']"></view>
   </view>
-</scroll-view>
+</view>
