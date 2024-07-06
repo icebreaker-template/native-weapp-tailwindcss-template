@@ -7,6 +7,8 @@
   "author": "",
   "license": "",
   "devDependencies": {
+    "@icebreakers/eslint-config": "^0.3.10",
+    "eslint": "^9.6.0",
     "miniprogram-api-typings": "^3.12.2"
   }
 }
