@@ -15,7 +15,7 @@
     <view class="mb-2 text-center before:text-xs before:text-sky-400 before:content-['现在，让我们开始神奇的_tailwindcss_开发之旅吧！']"></view>
   </view>
   <view class="h-[30px] w-[750px] text-center text-sm">px->rpx h-[30px] 会被转化成 height: 30rpx;</view>
-  <view class="button-example">
+  <view class="flex flex-col">
     <t-button theme="primary" size="large">填充按钮</t-button>
     <t-button theme="light" size="large">填充按钮</t-button>
     <t-button size="large">填充按钮</t-button>
