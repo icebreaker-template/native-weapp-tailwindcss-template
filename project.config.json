@@ -4,8 +4,7 @@
   "compileType": "miniprogram",
   "setting": {
     "useCompilerPlugins": [
-      "typescript",
-      "sass"
+      "typescript"
     ],
     "babelSetting": {
       "ignore": [],
