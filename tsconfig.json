@@ -21,7 +21,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "paths": {
+      "tdesign-miniprogram/*": [
+        "./miniprogram/miniprogram_npm/tdesign-miniprogram/*"
+      ]
+    }
   },
   "include": [
     "./**/*.ts"
