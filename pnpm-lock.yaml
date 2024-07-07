@@ -32,9 +32,15 @@ importers:
       postcss:
         specifier: ^8.4.39
         version: 8.4.39
+      postcss-pxtransform:
+        specifier: ^3.6.32
+        version: 3.6.32(postcss@8.4.39)
       tailwindcss:
         specifier: ^3.4.4
         version: 3.4.4
+      weapp-ide-cli:
+        specifier: ^1.0.1
+        version: 1.0.1
       weapp-tailwindcss:
         specifier: ^3.3.4
         version: 3.3.4(tailwindcss@3.4.4)
@@ -2901,6 +2907,11 @@ packages:
     peerDependencies:
       postcss: ^8.2.14
 
+  postcss-pxtransform@3.6.32:
+    resolution: {integrity: sha512-LEzh2nrq5zQPRtkZiGSlDnYwNjswOmgs2lvwJbVAGMIkxDtkxRzZa6qrskDq1QuKFC49kWRYnYuGHkScfOX6dw==}
+    peerDependencies:
+      postcss: ^8.4.18
+
   postcss-rem-to-responsive-pixel@6.0.1:
     resolution: {integrity: sha512-CbqKssPDiz+bT/HHI07KChLPm1IgnCCOqxCTxTw3/ddlpgTQeP8+oYzrjeC6Weo5UsKcRrhgScbmTBI1xsJEEA==}
     engines: {node: '>=16.6.0'}
@@ -3638,6 +3649,10 @@ packages:
 
   walk-up-path@3.0.1:
     resolution: {integrity: sha512-9YlCL/ynK3CTlrSRrDxZvUauLzAswPCrsaCgilqFevUYpeEW0/3ScEjaa3kbW/T0ghhkEr7mv+fpjqn1Y1YuTA==}
+
+  weapp-ide-cli@1.0.1:
+    resolution: {integrity: sha512-s0wrT8hB35HBz0/V7fhCp/WKU8jHyHzzYhDAidoAPlGMFNxBGA7ES2w/tHKst/vXz+UR4sp8E2i957cxb3ZnEQ==}
+    hasBin: true
 
   weapp-tailwindcss@3.3.4:
     resolution: {integrity: sha512-N8uBXBaA1BOlbeT2X+iLUVcoicmasoXyJ+ERWrSDER3k+n/7oZmkAzK3KL9tENG83hpDMc1Nu1oyKeVlbasFjw==}
@@ -7117,6 +7132,10 @@ snapshots:
       postcss: 8.4.39
       postcss-selector-parser: 6.1.0
 
+  postcss-pxtransform@3.6.32(postcss@8.4.39):
+    dependencies:
+      postcss: 8.4.39
+
   postcss-rem-to-responsive-pixel@6.0.1: {}
 
   postcss-selector-parser@6.1.0:
@@ -7991,6 +8010,10 @@ snapshots:
       - supports-color
 
   walk-up-path@3.0.1: {}
+
+  weapp-ide-cli@1.0.1:
+    dependencies:
+      execa: 5.1.1
 
   weapp-tailwindcss@3.3.4(tailwindcss@3.4.4):
     dependencies:

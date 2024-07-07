@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "weapp-tw dev",
     "build": "weapp-tw build",
-    "postinstall": "weapp-tw patch"
+    "postinstall": "weapp-tw patch",
+    "open": "weapp open -p"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.8.1",
@@ -19,7 +20,9 @@
     "eslint": "^9.6.0",
     "miniprogram-api-typings": "^3.12.2",
     "postcss": "^8.4.39",
+    "postcss-pxtransform": "^3.6.32",
     "tailwindcss": "^3.4.4",
+    "weapp-ide-cli": "^1.0.1",
     "weapp-tailwindcss": "^3.3.4"
   }
 }
