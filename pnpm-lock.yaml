@@ -18,8 +18,8 @@ importers:
         specifier: ^1.1.67
         version: 1.1.67
       '@weapp-tailwindcss/cli':
-        specifier: ^1.0.5
-        version: 1.0.5(jiti@1.21.6)(less@4.2.0)(sass@1.77.6)(typescript@5.5.3)(weapp-tailwindcss@3.3.4(tailwindcss@3.4.4))(yaml@2.4.5)
+        specifier: ^1.0.7
+        version: 1.0.7(jiti@1.21.6)(less@4.2.0)(sass@1.77.6)(typescript@5.5.3)(weapp-tailwindcss@3.3.4(tailwindcss@3.4.4))(yaml@2.4.5)
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.39)
@@ -33,14 +33,17 @@ importers:
         specifier: ^8.4.39
         version: 8.4.39
       postcss-pxtransform:
-        specifier: ^3.6.32
-        version: 3.6.32(postcss@8.4.39)
+        specifier: ^3.6.33
+        version: 3.6.33(postcss@8.4.39)
       sass:
         specifier: ^1.77.6
         version: 1.77.6
       tailwindcss:
         specifier: ^3.4.4
         version: 3.4.4
+      typescript:
+        specifier: ^5.5.3
+        version: 5.5.3
       weapp-ide-cli:
         specifier: ^1.0.1
         version: 1.0.1
@@ -478,8 +481,8 @@ packages:
   '@weapp-core/regex@1.0.1':
     resolution: {integrity: sha512-gRIHHAb1MoTmM1lzfaKldwNXgsScaVu9/bnZDKT0A1CgUkaHAouxvZta3yQgev91V3ZAHQ+tdwA8WGhpkstzUw==}
 
-  '@weapp-tailwindcss/cli@1.0.5':
-    resolution: {integrity: sha512-cPQ5oJKDd8L2IcchS6FXBXZli02/knJLGjpqWHEvurlpDLSzVcXgz/OP8fQ4jaW8e6hTft4vO0o9RJmzF2kbvQ==}
+  '@weapp-tailwindcss/cli@1.0.7':
+    resolution: {integrity: sha512-o1JPTgK1o03Q2T+Xg9jA3VPls2yavLye7e05lcf3iz8mkOQmAOPHZsj6/NKyZhYTeU2EWodJxyqTvDrbMgtgag==}
     peerDependencies:
       less: '*'
       sass: '*'
@@ -2913,8 +2916,8 @@ packages:
     peerDependencies:
       postcss: ^8.2.14
 
-  postcss-pxtransform@3.6.32:
-    resolution: {integrity: sha512-LEzh2nrq5zQPRtkZiGSlDnYwNjswOmgs2lvwJbVAGMIkxDtkxRzZa6qrskDq1QuKFC49kWRYnYuGHkScfOX6dw==}
+  postcss-pxtransform@3.6.33:
+    resolution: {integrity: sha512-V0EVVPePMso05NXebIZmpM0cKIqE2vukeDgJr0KP9V8aXy+84rj+XnF+ooFJ3zerlX3geMVq8HLDi8JeFds51A==}
     peerDependencies:
       postcss: ^8.4.18
 
@@ -4328,7 +4331,7 @@ snapshots:
 
   '@weapp-core/regex@1.0.1': {}
 
-  '@weapp-tailwindcss/cli@1.0.5(jiti@1.21.6)(less@4.2.0)(sass@1.77.6)(typescript@5.5.3)(weapp-tailwindcss@3.3.4(tailwindcss@3.4.4))(yaml@2.4.5)':
+  '@weapp-tailwindcss/cli@1.0.7(jiti@1.21.6)(less@4.2.0)(sass@1.77.6)(typescript@5.5.3)(weapp-tailwindcss@3.3.4(tailwindcss@3.4.4))(yaml@2.4.5)':
     dependencies:
       commander: 12.1.0
       cosmiconfig: 9.0.0(typescript@5.5.3)
@@ -7153,7 +7156,7 @@ snapshots:
       postcss: 8.4.39
       postcss-selector-parser: 6.1.0
 
-  postcss-pxtransform@3.6.32(postcss@8.4.39):
+  postcss-pxtransform@3.6.33(postcss@8.4.39):
     dependencies:
       postcss: 8.4.39
 
