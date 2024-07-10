@@ -14,7 +14,7 @@ Component({
   methods: {
     copy(event: WechatMiniprogram.BaseEvent) {
       wx.setClipboardData({
-        data: event.target.dataset.copyUrl
+        data: event.target.dataset.copyUrl,
       })
     },
     getUserProfile() {
@@ -25,9 +25,9 @@ Component({
           console.log(res)
           this.setData({
             userInfo: res.userInfo,
-            hasUserInfo: true
+            hasUserInfo: true,
           })
-        }
+        },
       })
     },
   },

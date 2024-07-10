@@ -1,7 +1,13 @@
 import { icebreaker } from '@icebreakers/eslint-config'
 
 export default icebreaker(
-  {},
+  {
+    formatters: {
+      prettierOptions: {
+        printWidth: 80
+      }
+    },
+  },
   {
     languageOptions: {
       globals: {
