@@ -8,6 +8,10 @@ const config = {
   },
   weappTailwindcssOptions: {
     rem2rpx: true,
+    // 下方的配置，可用于组件 externalClasses 自定义转译
+    // customAttributes: {
+    //   '*': ['custom-class'],
+    // },
   },
   // 你可以开启这个选项来让 cli 主动编译 typescript
   // 需要先安装 typescript 再开启
