@@ -1,6 +1,6 @@
 <!-- index.wxml -->
 <navigation-bar title="weapp-tailwindcss" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<view class="p-4 mt-[30%]">
+<view class="p-4 mt-[13.1415926%]">
   <view class="space-y-8 [&>view]:text-center">
     <view class="aspect-[100/16.1] bg-[url(https://pic4.zhimg.com/80/v2-63755eaa318858e33445862d72581207.png)] bg-[length:100%_100%] bg-no-repeat"></view>
     <view class="flex items-center justify-center text-gray-600/75" bindtap="copy" data-copy-url="https://github.com/sonofmagic/weapp-tailwindcss">
@@ -13,8 +13,14 @@
     </view>
     <view class="text-sm text-gray-600/75">你可以在上方的官网上，找到大量的提效解决方案</view>
     <view class="text-center before:text-sm before:text-sky-400 before:content-['现在，让我们开始神奇的_tailwindcss_开发之旅吧！']"></view>
-    <view class="text-sm text-[#17673a]">
-      px->rpx h-[30px] 会被转化成 height: 30rpx;
+    <view class="text-sm space-y-1.5 text-[#334155]">
+      <view class="text-xl">CSS 单位转化: px->rpx</view>
+      <view>默认情况下 h-[30px] 会被转化成 height: 30rpx;</view>
+      <view>你可以在特定 css 文件内头部添加</view>
+      <view class="p-5 bg-[#1e293b] rounded-xl text-white shadow-[inset_0_0_0_1px_#ffffff1a]">
+        /*postcss-pxtransform disable*/
+      </view>
+      <view>的 css 注释来禁用这个转化</view>
     </view>
   </view>
 </view>
